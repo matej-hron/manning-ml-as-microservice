@@ -1,0 +1,7 @@
+web:
+  image: predict_sentiment:latest
+  build: ./web
+  ports:
+    - "5000:5000"
+  volumes:
+    - .:/code
